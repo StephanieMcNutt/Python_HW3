@@ -35,29 +35,34 @@ with open(election_data, newline="") as csvfile:
     
     #count candidate votes
     
-#create array to count
+    #create array to count
     l = candidate
     ul = ["Khan", "Correy", "Li", "O'Tooley"]
     result = sorted([(x, l.count(x)) for x in ul], key=lambda y: y[1])
     #print(result)
     
-#apprend results
+    #apprend results
     cand_ttl = []
     for rows in result:
         cand_ttl.append(rows[1])
     #print(cand_ttl)
     
-    
+    #asign values
     khan_votes = cand_ttl[3]
     correy_votes = cand_ttl[2]
     li_votes = cand_ttl[1]
     otooley_votes = cand_ttl[0]
      
+    #Calculate percentage
     khan_percent = khan_votes/ttl_votes * 100
-    correy_percent = correy_votes/ttl_votes
-    li_percent = li_votes/ttl_votes
-    otooley_percent = otooley_votes/ttl_votes
-    print(khan_percent, correy_percent)
+    correy_percent = correy_votes/ttl_votes * 100
+    li_percent = li_votes/ttl_votes *100
+    otooley_percent = otooley_votes/ttl_votes * 100
+    
+    #find winner
+    winner = max(result)
+    print(winner[0])
+    
     
    
    
