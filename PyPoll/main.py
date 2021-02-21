@@ -6,7 +6,7 @@
 import os
 import csv
 #import numpy
-import pandas as pd
+#import pandas as pd
     
 
 #joining path
@@ -35,7 +35,15 @@ with open(election_data, newline="") as csvfile:
     
     # candidates vote count
     
-    
+    if candidate == "Khan":
+        khan_vote +=1
+    elif candidate == "Correy":
+        correy_vote +=1
+    elif candidate == "Li":
+        li_vote +=1
+    elif candidate == "Correy":
+        correy_vote +=1
+  
     
     
     
