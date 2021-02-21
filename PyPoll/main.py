@@ -33,31 +33,38 @@ with open(election_data, newline="") as csvfile:
     ttl_votes = len(candidate)
     print(ttl_votes)
     
-    # candidates vote count
+    #count candidate votes
+    l = candidate
+    ul = ["Khan", "Correy", "Li", "O'Tooley"]
+    result = sorted([(x, l.count(x)) for x in ul], key=lambda y: y[1])
+    #print(result)
+    cand_ttl = []
+    for rows in result:
+        cand_ttl.append(rows[1])
+    print(cand_ttl)
+   
+   
     
-    if candidate == "Khan":
-        khan_vote +=1
-    elif candidate == "Correy":
-        correy_vote +=1
-    elif candidate == "Li":
-        li_vote +=1
-    elif candidate == "Correy":
-        correy_vote +=1
-  
+   
     
+   
     
+   
     
+   
     
-    #can_u = candidate.unique()
-       
-    # candidates who got votes 
- 
-    #if candidate == "Khan":
-       # khan_vote +=1
- #   elif candidate == "Correy":
- #       correy_vote +=1
- #   elif candidate == "L":
- #       correy_vote +=1    
+   
     
+   
     
+   
     
+   
+    
+   
+    
+   
+    
+   
+    
+   
