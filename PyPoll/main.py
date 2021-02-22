@@ -5,10 +5,7 @@
 #import library
 import os
 import csv
-#import numpy
-#import pandas as pd
-    
-
+ 
 #joining path
 election_data = os.path.join("Resources", "election_data.csv")
 
@@ -107,25 +104,4 @@ with open(election_data, newline="") as csvfile:
     #*********************************#
     
     
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
-    
-   
+       
