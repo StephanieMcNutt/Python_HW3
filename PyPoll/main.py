@@ -69,13 +69,17 @@ with open(election_data, newline="") as csvfile:
     print("---------------------------------")
     print("Total Votes: " + str(ttl_votes))
     print("---------------------------------")
-    print("Khan: " + str(khan_percent) + "% " + "(" + str(khan_votes) + ")")
-    print("Correy: " + str(correy_percent) + "% " + "(" + str(correy_votes) + ")")
-    print("Li: " + str(li_percent) + "% " + "(" + str(li_votes) + ")")
-    print("O'Tooley': " + str(otooley_percent) + "% " + "(" + str(otooley_votes) + ")")
+    print(str(f"Khan: {khan_percent:.3f}") + "% " + "(" + str(khan_votes) + ")")
+    print(str(f"Correy: {correy_percent:.3f}") + "% " + "(" + str(correy_votes) + ")")
+    print(str(f"Li: {li_percent:.3f}") + "% " + "(" + str(li_votes) + ")")
+    print(str(f"O'Tooley: {otooley_percent:.3f}") + "% " + "(" + str(otooley_votes) + ")")
     print("---------------------------------")   
     print("Winner: " + str(winner))
     print("---------------------------------") 
+    #*********************************#
+    
+    
+    
     
    
     
