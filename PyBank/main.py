@@ -56,8 +56,8 @@ with open(budget_data, newline="") as csvfile:
     print("Total Months: " + str(ttl_months))
     print("Total Revenue: $" + str(net_profit))
     print("Average Change: $" + str(avg_rev))
-    print("Greatest Increase in Profit: " + str(months[chg_rev.index(max(chg_rev)) + 1]) + " $" + str(max_profit))
-    print("Greatest Decrease in Profit: " + str(months[chg_rev.index(min(chg_rev)) + 1]) + " $" + str(max_loss))
+    print("Greatest Increase in Profit: " + str(months[chg_rev.index(max(chg_rev)) + 1]) + " ($" + str(max_profit) + ")")
+    print("Greatest Decrease in Profit: " + str(months[chg_rev.index(min(chg_rev)) + 1]) + " ($" + str(max_loss) + ")")
     
     #Output to txt file
     
@@ -68,8 +68,8 @@ with open(budget_data, newline="") as csvfile:
         f.write("Total Months: " + str(ttl_months) + "\n")
         f.write("Total Revenue: $" + str(net_profit) + "\n")
         f.write("Average Change: $" + str(avg_rev) + "\n")
-        f.write("Greatest Increase in Profit: " + str(months[chg_rev.index(max(chg_rev)) + 1]) + " $" + str(max_profit) + "\n")
-        f.write("Greatest Decrease in Profit: " + str(months[chg_rev.index(min(chg_rev)) + 1]) + " $" + str(max_loss) + "\n")
+        f.write("Greatest Increase in Profit: " + str(months[chg_rev.index(max(chg_rev)) + 1]) + " ($" + str(max_profit) + ") \n")
+        f.write("Greatest Decrease in Profit: " + str(months[chg_rev.index(min(chg_rev)) + 1]) + " ($" + str(max_loss) + ") \n")
     
     f.close
     
