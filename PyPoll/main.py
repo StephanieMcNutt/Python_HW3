@@ -60,7 +60,11 @@ with open(election_data, newline="") as csvfile:
     otooley_percent = otooley_votes/ttl_votes * 100
     
     #find winner
-    winner = max(result)
+    
+    
+    w = max(cand_ttl)
+    if w == khan_votes:
+        winner = "Khan"
     #print(winner[0])
     
     
@@ -74,7 +78,14 @@ with open(election_data, newline="") as csvfile:
     print(str(f"Li: {li_percent:.3f}") + "% " + "(" + str(li_votes) + ")")
     print(str(f"O'Tooley: {otooley_percent:.3f}") + "% " + "(" + str(otooley_votes) + ")")
     print("---------------------------------")   
-    print("Winner: " + str(winner))
+    if w == khan_votes:
+        print("Khan")
+    elif w == correy_votes:
+        print("Correy")
+    elif w == li_votes:
+        print("Li")
+    elif w == otooley_votes:
+        print("O'Tooley")
     print("---------------------------------") 
     #*********************************#
     
