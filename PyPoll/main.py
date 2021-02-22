@@ -17,13 +17,10 @@ with open(election_data, newline="") as csvfile:
     print(f"Header: {csv_header}")
     
     #Create arrays
-    voter_id = []
-    county = []
+    
     candidate = []
     
     for rows in csvreader:
-        voter_id.append(rows[0])
-        county.append(rows[1])
         candidate.append(rows[2])
         
     #calculate total votes
