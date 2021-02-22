@@ -31,7 +31,7 @@ with open(election_data, newline="") as csvfile:
         
     #calculate total votes
     ttl_votes = len(candidate)
-    print(ttl_votes)
+    #print(ttl_votes)
     
     #count candidate votes
     
@@ -61,13 +61,21 @@ with open(election_data, newline="") as csvfile:
     
     #find winner
     winner = max(result)
-    print(winner[0])
+    #print(winner[0])
     
     
-   
-   
-    
-   
+    #**********print report**********#
+    print("Election Results")
+    print("---------------------------------")
+    print("Total Votes: " + str(ttl_votes))
+    print("---------------------------------")
+    print("Khan: " + str(khan_percent) + "% " + "(" + str(khan_votes) + ")")
+    print("Correy: " + str(correy_percent) + "% " + "(" + str(correy_votes) + ")")
+    print("Li: " + str(li_percent) + "% " + "(" + str(li_votes) + ")")
+    print("O'Tooley': " + str(otooley_percent) + "% " + "(" + str(otooley_votes) + ")")
+    print("---------------------------------")   
+    print("Winner: " + str(winner))
+    print("---------------------------------") 
     
    
     
