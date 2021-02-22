@@ -55,7 +55,7 @@ with open(budget_data, newline="") as csvfile:
     print("--------------------------")
     print("Total Months: " + str(ttl_months))
     print("Total Revenue: $" + str(net_profit))
-    print("Average Change: $" + str(avg_rev))
+    print(f"Average Change: ${avg_rev:.2f}")
     print("Greatest Increase in Profit: " + str(months[chg_rev.index(max(chg_rev)) + 1]) + " ($" + str(max_profit) + ")")
     print("Greatest Decrease in Profit: " + str(months[chg_rev.index(min(chg_rev)) + 1]) + " ($" + str(max_loss) + ")")
     
@@ -67,7 +67,7 @@ with open(budget_data, newline="") as csvfile:
         f.write("-------------------------- \n")
         f.write("Total Months: " + str(ttl_months) + "\n")
         f.write("Total Revenue: $" + str(net_profit) + "\n")
-        f.write("Average Change: $" + str(avg_rev) + "\n")
+        f.write(f"Average Change: ${avg_rev:.2f}" + "\n")
         f.write("Greatest Increase in Profit: " + str(months[chg_rev.index(max(chg_rev)) + 1]) + " ($" + str(max_profit) + ") \n")
         f.write("Greatest Decrease in Profit: " + str(months[chg_rev.index(min(chg_rev)) + 1]) + " ($" + str(max_loss) + ") \n")
     
