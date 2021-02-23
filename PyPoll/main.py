@@ -86,18 +86,23 @@ with open(election_data, newline="") as csvfile:
     
     
     #**********output to file**********#
-    with open("report.txt", "w") as f:
-        f.write("Election Results \n")
-        f.write("--------------------------------- \n")
-        f.write("Total Votes: " + str(ttl_votes) + "\n")
-        f.write("--------------------------------- \n")
-        f.write(str(f"Khan: {khan_percent:.3f}") + "% " + "(" + str(khan_votes) + ") \n")
-        f.write(str(f"Correy: {correy_percent:.3f}") + "% " + "(" + str(correy_votes) + ") \n")
-        f.write(str(f"Li: {li_percent:.3f}") + "% " + "(" + str(li_votes) + ") \n")
-        f.write(str(f"O'Tooley: {otooley_percent:.3f}") + "% " + "(" + str(otooley_votes) + ") \n")
-        f.write("--------------------------------- \n")   
-        f.write("Winner: " + str(winner) + "\n")
-        f.write("--------------------------------- \n") 
+    file='C:/Users/steph/Desktop/Python_HW3/PyPoll/analysis/report.txt'
+    f=open(file, 'w')
+    
+    
+    f.write("Election Results \n")
+    f.write("--------------------------------- \n")
+    f.write("Total Votes: " + str(ttl_votes) + "\n")
+    f.write("--------------------------------- \n")
+    f.write(str(f"Khan: {khan_percent:.3f}") + "% " + "(" + str(khan_votes) + ") \n")
+    f.write(str(f"Correy: {correy_percent:.3f}") + "% " + "(" + str(correy_votes) + ") \n")
+    f.write(str(f"Li: {li_percent:.3f}") + "% " + "(" + str(li_votes) + ") \n")
+    f.write(str(f"O'Tooley: {otooley_percent:.3f}") + "% " + "(" + str(otooley_votes) + ") \n")
+    f.write("--------------------------------- \n")   
+    f.write("Winner: " + str(winner) + "\n")
+    f.write("--------------------------------- \n") 
+    
+    f.close
     #*********************************#
     
     

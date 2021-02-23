@@ -63,10 +63,7 @@ with open(budget_data, newline="") as csvfile:
     
     file="C:/Users/steph/Desktop/Python_HW3/PyBank/analysis/report.txt"
     f=open(file, 'w')
-
-      
-
-    
+        
     f.write("Financial Analysis \n")
     f.write("-------------------------- \n")
     f.write("Total Months: " + str(ttl_months) + "\n")
