@@ -61,17 +61,22 @@ with open(budget_data, newline="") as csvfile:
     
     #Output to txt file
     
-    with open("report.txt", "w") as f:
-  
-        f.write("Financial Analysis \n")
-        f.write("-------------------------- \n")
-        f.write("Total Months: " + str(ttl_months) + "\n")
-        f.write("Total Revenue: $" + str(net_profit) + "\n")
-        f.write(f"Average Change: ${avg_rev:.2f}" + "\n")
-        f.write("Greatest Increase in Profit: " + str(months[chg_rev.index(max(chg_rev)) + 1]) + " ($" + str(max_profit) + ") \n")
-        f.write("Greatest Decrease in Profit: " + str(months[chg_rev.index(min(chg_rev)) + 1]) + " ($" + str(max_loss) + ") \n")
+    file="C:/Users/steph/Desktop/Python_HW3/PyBank/analysis/report.txt"
+    f=open(file, 'w')
+
+      
+
+    
+    f.write("Financial Analysis \n")
+    f.write("-------------------------- \n")
+    f.write("Total Months: " + str(ttl_months) + "\n")
+    f.write("Total Revenue: $" + str(net_profit) + "\n")
+    f.write(f"Average Change: ${avg_rev:.2f}" + "\n")
+    f.write("Greatest Increase in Profit: " + str(months[chg_rev.index(max(chg_rev)) + 1]) + " ($" + str(max_profit) + ") \n")
+    f.write("Greatest Decrease in Profit: " + str(months[chg_rev.index(min(chg_rev)) + 1]) + " ($" + str(max_loss) + ") \n")
     
     f.close
+    
     
 
 
