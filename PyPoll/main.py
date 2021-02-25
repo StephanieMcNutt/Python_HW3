@@ -59,6 +59,12 @@ with open(election_data, newline="") as csvfile:
     w = max(cand_ttl)
     if w == khan_votes:
         winner = "Khan"
+    if w == correy_votes:
+        winner = "Correy"
+    if w == li_votes:
+        winner = "Li"
+    if w == otooley_votes:
+        winner = "O'Tooley"
     #print(winner[0])
     
     
