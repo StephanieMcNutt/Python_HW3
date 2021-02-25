@@ -65,7 +65,7 @@ with open(election_data, newline="") as csvfile:
         winner = "Li"
     if w == otooley_votes:
         winner = "O'Tooley"
-    #print(winner[0])
+    print(winner[0])
     
     
     #**********print report**********#
@@ -78,6 +78,7 @@ with open(election_data, newline="") as csvfile:
     print(str(f"Li: {li_percent:.3f}") + "% " + "(" + str(li_votes) + ")")
     print(str(f"O'Tooley: {otooley_percent:.3f}") + "% " + "(" + str(otooley_votes) + ")")
     print("---------------------------------")   
+    w = max(cand_ttl)
     if w == khan_votes:
         print("Khan")
     elif w == correy_votes:
